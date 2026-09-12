@@ -1,0 +1,151 @@
+:root {
+  --bg: #14161a;
+  --panel: #1e2128;
+  --screen: #23262e;
+  --key: #2a2e37;
+  --key-hover: #333844;
+  --op: #e8a94a;
+  --op-hover: #f0b968;
+  --fn: #9aa1ad;
+  --fn-bg: #2a2e37;
+  --text: #eef0f3;
+  --text-dim: #6b7280;
+  --equals: #e8a94a;
+  --shadow: rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  font-family: 'Inter', sans-serif;
+  padding: 24px;
+}
+
+.device {
+  width: 340px;
+  background: var(--panel);
+  border-radius: 28px;
+  padding: 24px 20px 20px;
+  box-shadow:
+    0 30px 60px -20px var(--shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.brand {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+  padding-left: 4px;
+}
+
+.brand span {
+  color: var(--op);
+}
+
+.screen {
+  background: var(--screen);
+  border-radius: 16px;
+  padding: 22px 18px 18px;
+  margin-bottom: 18px;
+  text-align: right;
+  min-height: 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.history {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: var(--text-dim);
+  min-height: 18px;
+  overflow-wrap: break-word;
+}
+
+.display {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.1;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.key {
+  border: none;
+  border-radius: 14px;
+  height: 62px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--key);
+  transition: background 0.12s ease, transform 0.06s ease;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.key:hover {
+  background: var(--key-hover);
+}
+
+.key:active {
+  transform: scale(0.96);
+}
+
+.key.fn {
+  background: var(--fn-bg);
+  color: var(--fn);
+  font-size: 17px;
+}
+
+.key.op {
+  background: transparent;
+  color: var(--op);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.key.op:hover {
+  color: var(--op-hover);
+}
+
+.key.equals {
+  background: var(--equals);
+  color: #1a1d23;
+  font-weight: 600;
+}
+
+.key.equals:hover {
+  background: var(--op-hover);
+}
+
+.key.zero {
+  grid-column: span 2;
+  justify-self: stretch;
+}
+
+@media (max-width: 380px) {
+  .device {
+    width: 100%;
+  }
+}

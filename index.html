@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calc — precision calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="device">
+  <div class="brand">calc<span>.</span></div>
+
+  <div class="screen">
+    <div class="history" id="history"></div>
+    <div class="display" id="display">0</div>
+  </div>
+
+  <div class="keys">
+    <button class="key fn" data-action="clear">AC</button>
+    <button class="key fn" data-action="negate">+/−</button>
+    <button class="key fn" data-action="percent">%</button>
+    <button class="key op" data-action="divide">÷</button>
+
+    <button class="key num" data-num="7">7</button>
+    <button class="key num" data-num="8">8</button>
+    <button class="key num" data-num="9">9</button>
+    <button class="key op" data-action="multiply">×</button>
+
+    <button class="key num" data-num="4">4</button>
+    <button class="key num" data-num="5">5</button>
+    <button class="key num" data-num="6">6</button>
+    <button class="key op" data-action="subtract">−</button>
+
+    <button class="key num" data-num="1">1</button>
+    <button class="key num" data-num="2">2</button>
+    <button class="key num" data-num="3">3</button>
+    <button class="key op" data-action="add">+</button>
+
+    <button class="key num zero" data-num="0">0</button>
+    <button class="key num" data-num=".">.</button>
+    <button class="key op equals" data-action="equals">=</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
