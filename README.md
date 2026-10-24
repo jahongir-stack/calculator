@@ -6,7 +6,7 @@ A precision calculator with a clean, hardware-inspired interface.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
 - Standard operations: add, subtract, multiply, divide
 - Percentage and sign toggle (+/−)
