@@ -1,4 +1,4 @@
-# calc.
+# calc
 
 A precision calculator with a clean, hardware-inspired interface.
 
