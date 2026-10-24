@@ -15,13 +15,13 @@ A precision calculator with a clean, hardware-inspired interface.
 - Division-by-zero handling
 - Responsive down to mobile screens
 
----
+--
 
 ## 🧩 Tech Stack
 
 Pure HTML, CSS, and JavaScript — no frameworks, no dependencies.
 
----
+--
 
 ## 🚀 Getting Started
 
