@@ -1,4 +1,4 @@
-# calc
+# calc.
 
 A precision calculator with a clean, hardware-inspired interface.
 
@@ -15,7 +15,7 @@ A precision calculator with a clean, hardware-inspired interface.
 - Division-by-zero handling
 - Responsive down to mobile screens
 
---
+---
 
 ## 🧩 Tech Stack
 
