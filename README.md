@@ -4,7 +4,6 @@ A precision calculator with a clean, hardware-inspired interface.
 
 🔗 **Live Demo:** _(add your deployed link here)_
 
----
 
 # ✨ Features
 
