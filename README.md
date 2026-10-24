@@ -36,3 +36,9 @@ Open `index.html` in any browser — no build step required.
 ## 👨‍💻 Author
 
 **Jahongir Ishimov**
+
+
+
+
+## How to use
+Open index.html in your browser.
